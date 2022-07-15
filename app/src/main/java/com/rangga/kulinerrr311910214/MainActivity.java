@@ -17,8 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bnvMenuBawah = findViewById(R.id.bnv_menu);
-        getSupportFragmentManager().beginTransaction().replace(R.id.
-                body_container, new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new HomeFragment()).commit();
         bnvMenuBawah.setSelectedItemId(R.id.menu_home);
         getSupportActionBar();setTitle("Home");
         bnvMenuBawah.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
