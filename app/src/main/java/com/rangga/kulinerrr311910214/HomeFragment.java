@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+
 public class HomeFragment extends Fragment {
 
     private RecyclerView rvKuliner;
@@ -30,7 +31,7 @@ public class HomeFragment extends Fragment {
 
         tampilDataCard();
 
-// Inflate the layout for this fragment
+        // Inflate the layout for this fragment
         return myView;
     }
 
@@ -39,5 +40,7 @@ public class HomeFragment extends Fragment {
         rvKuliner.setLayoutManager(new LinearLayoutManager(getContext()));
         AdapterCard adaptorCard = new AdapterCard(data);
         rvKuliner.setAdapter(adaptorCard);
+
     }
+
 }

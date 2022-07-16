@@ -10,12 +10,17 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 
 public class AboutFragment extends Fragment {
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
         View aboutView = inflater.inflate(R.layout.fragment_about, container, false);
+
         WebView webView = aboutView.findViewById(R.id.wv_about);
         webView.loadUrl("file:///android_asset/index.html");
-// Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_about, container, false);
+
+        // Inflate the layout for this fragment
+        return aboutView;
     }
 }
